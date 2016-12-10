@@ -20,7 +20,9 @@ public class BasicExample {
 		CrawlerPack.setLoggerLevel(SimpleLog.LOG_LEVEL_OFF);
 
 		// 遠端資料路徑
-		String uri = "gz:http://tisvcloud.freeway.gov.tw/roadlevel_value.xml.gz";
+		String uri = "tar:gz:http://crawler:12345678@128.199.204.20:8080/httpLogin/download.tar.gz"
+				+"!download.tar"
+				+"!/path/data";
 
 		System.out.println(
 				CrawlerPack.start()
@@ -30,12 +32,12 @@ public class BasicExample {
 				//.setRemoteEncoding("big5")// 設定遠端資料文件編碼
 				
 				// 選擇資料格式 (三選一)
-				.getFromXml(uri)
+				.getFromJson(uri)
 			    //.getFromHtml(uri)
 			    //.getFromXml(uri)
 			    
 			    // 這兒開始是 Jsoup Document 物件操作
-
+			    .select(".desc")
 			    
 		);
 	}
