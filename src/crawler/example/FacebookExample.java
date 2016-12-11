@@ -27,7 +27,7 @@ public class FacebookExample {
 		String uri = 
 				"https://graph.facebook.com/v2.5"
 				+ "/search?q=%E9%9D%A0%E5%8C%97&type=page&limit=1000&fields=name,id,likes,talking_about_count"
-				+ "&access_token=EAACEdEose0cBAMzLyMlMxZAY73J1TBiZAHJhrF8du8fLhMmGYrUA3W9ezJDQk9oZAa07o4F2drZAL2k1cCtgdpl5LZClZCo6733A3xddNbjSAoTxEZBWY4rKnzLWTU3I0KMgT0qsw6eIRfdzg9RZCIkuTZCtGZCyzct657fywQpsFCNAZDZD";
+				+ "&access_token=EAACEdEose0cBAIKGqtiDVvIJFLuQLCqznbmlrN6sl9UAOabPaydoZAdxAEeXvi6ZCcSn0ymWCdRrcPARmfcQGvalhOlU35BOFG9vBHoPiyUppU05VBK78v82ZCanc2AA9cWVghgTqmvcrAwDKxQUG5QdIsJ08vrBhm8IhatAKBLaktCoYgjMH5nbmU5DG0ZD";
 
 
 
