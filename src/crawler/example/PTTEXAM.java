@@ -2,6 +2,7 @@ package crawler.example;
 
 import com.github.abola.crawler.CrawlerPack;
 import org.apache.commons.logging.impl.SimpleLog;
+import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
 /**
@@ -23,7 +24,7 @@ public class PTTEXAM {
 		// 遠端資料路徑
 		String uri = "https://www.ptt.cc/bbs/Gossiping/M.1481374603.A.18B.html";
 
-        Element jsoup = CrawlerPack.start().addCookie("over18","1").getFromHtml(uri);
+        Document jsoup = CrawlerPack.start().addCookie("over18","1").getFromHtml(uri);
         //System.out.println(jsoup);
         for (Element ele:jsoup.select("#main-content *")) {
             ele.remove();
